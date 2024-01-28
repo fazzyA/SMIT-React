@@ -1,4 +1,8 @@
-const Button = () => {
-    return <button className="mybutton">js@45</button>
+export default function Button({text}){
+    return (
+        <input 
+        type="button" 
+        className="button" 
+        value={text} />
+    )
 }
-export default Button
