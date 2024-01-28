@@ -12,7 +12,12 @@ function App(){
     console.log("🚀 ~ App ~ topStudents:", topStudents)
     return (
         <div>
-            <Header />
+            <Header heading={"My First React App"} text={"my text"} />
+            <Button text="Inc" />
+            <Button text="Dec"/>
+            <Button text="Reset" />   
+
+
             <h6>no if, for, declaration, initialization, updation</h6>
             {topStudents.map((item) => (
              <div>
