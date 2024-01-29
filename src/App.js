@@ -1,3 +1,4 @@
+import Button from "./components/Button";
 import MyFooter from "./components/Footer";
 import Header from "./components/Header";
 import "./index.css"
