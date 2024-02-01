@@ -1,7 +1,7 @@
 div {
     width: 700px;
     margin: 5px auto;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     border-radius: 6px;
     padding: 5px;
 }

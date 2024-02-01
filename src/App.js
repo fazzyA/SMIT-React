@@ -1,6 +1,8 @@
+import Main from "./Main";
 import Button from "./components/Button";
 import MyFooter from "./components/Footer";
 import Header from "./components/Header";
+import MyButton from "./components/MyButton";
 import "./index.css"
 function App(){
     const students = [
@@ -17,6 +19,8 @@ function App(){
             <Button text="Inc" />
             <Button text="Dec"/>
             <Button text="Reset" />   
+            <MyButton heading={`I am button from hme`} />
+            <Main heading={`AppHeading`}>I am a child text</Main>
 
 
             <h6>no if, for, declaration, initialization, updation</h6>
