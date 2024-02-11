@@ -1,15 +1,19 @@
-import React from "react";
-import ReactDOM  from "react-dom/client";
-import App from "./App";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import MyButton from "./components/MyButton";
-import Main from "./Main";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import Home from './Home';
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <React.StrictMode>
-        {/* <App /> */}
-        <Main heading={`Heading`}>I am a child text</Main>
-        <h1>I am  a headingh1</h1>
-    </React.StrictMode>
+  <React.StrictMode>
+    {/* <App /> */}
+    <Home />
+  </React.StrictMode>
 );
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
