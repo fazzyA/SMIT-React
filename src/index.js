@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Home from './Home';
+import Main from './Main';
+import Form from './Form';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Home />
+    {/* <Home /> */}
+    {/* <Main />
+     */}
+    <Form />
   </React.StrictMode>
 );
 

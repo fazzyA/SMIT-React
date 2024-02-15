@@ -1,12 +1,22 @@
-const Main = ({children , heading}) => {
-    console.log("🚀 ~ Main ~ children:", children)
-    const a = 10
-    
+import { useEffect, useState } from "react"
+
+const Main = () => {
+    const [num, setNum] = useState(30)
+    const [str, setStr] = useState("")
+    useEffect(() =>{
+        console.log("I am in useeffect")
+        
+    }, [str])
+    // [] tells only when component is mounted or render first time
+    const handleClick = (e) => {
+        setStr(e.target.value)
+    }
     return (
         <div>
-            <h2>{heading}</h2>
-            <b>{children ? children : <p>dummy text</p>}</b>
-            <h3>{(a > 11) ? "Login" : "Logout"}</h3>
+        <h2>{num}</h2>
+        <h1>{str}</h1>
+        {/* <input type="text" onChange={(e) => setStr(e.target.value)} /> */}
+        <input type="text" onChange={(e) => handleClick(e)} />
         </div>
     )
 }
